@@ -32,8 +32,39 @@ namespace TheParfum {
             FormHijo.Show();
         }
 
-        private void button_Venta_Click(object sender, EventArgs e) {
-
+        #region Separadores
+        private void parrotButton_Vender_MouseHover(object sender, EventArgs e) {
+            airSeparator_Vender.BackColor = Color.FromArgb(128, 128, 255);
+            airSeparator_Vender.Refresh();
         }
+
+        private void parrotButton_Vender_MouseLeave(object sender, EventArgs e) {
+            airSeparator_Vender.BackColor = Color.Black;
+        }
+
+        private void parrotButton_Stock_MouseHover(object sender, EventArgs e) {
+            airSeparator_Stock.BackColor = Color.FromArgb(255, 128, 128);
+        }
+
+        private void parrotButton_Stock_MouseLeave(object sender, EventArgs e) {
+            airSeparator_Stock.BackColor = Color.Black;
+        }
+
+        private void parrotButton_Caja_MouseHover(object sender, EventArgs e) {
+            airSeparator_Caja.BackColor = Color.FromArgb(255, 255, 128);
+        }
+
+        private void parrotButton_Caja_MouseLeave(object sender, EventArgs e) {
+            airSeparator_Caja.BackColor = Color.Black;
+        }
+
+        private void parrotButton_Configuracion_MouseHover(object sender, EventArgs e) {
+            airSeparator_Configuracion.BackColor = Color.FromArgb(255, 128, 0);
+        }
+
+        private void parrotButton_Configuracion_MouseLeave(object sender, EventArgs e) {
+            airSeparator_Configuracion.BackColor = Color.Black;
+        }
+        #endregion
     }
 }

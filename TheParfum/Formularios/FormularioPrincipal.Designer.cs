@@ -26,12 +26,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioPrincipal));
             this.ThePerfum = new ReaLTaiizor.Forms.HopeForm();
             this.panel_ContenedorLateral = new System.Windows.Forms.Panel();
+            this.airSeparator_Configuracion = new ReaLTaiizor.Controls.AirSeparator();
+            this.parrotButton_Configuracion = new ReaLTaiizor.Controls.ParrotButton();
+            this.airSeparator_Caja = new ReaLTaiizor.Controls.AirSeparator();
+            this.parrotButton_Caja = new ReaLTaiizor.Controls.ParrotButton();
+            this.airSeparator_Stock = new ReaLTaiizor.Controls.AirSeparator();
+            this.parrotButton_Stock = new ReaLTaiizor.Controls.ParrotButton();
+            this.airSeparator_Vender = new ReaLTaiizor.Controls.AirSeparator();
+            this.parrotButton_Vender = new ReaLTaiizor.Controls.ParrotButton();
             this.parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
-            this.button_Venta = new ReaLTaiizor.Controls.Button();
-            this.button1 = new ReaLTaiizor.Controls.Button();
-            this.button2 = new ReaLTaiizor.Controls.Button();
-            this.button3 = new ReaLTaiizor.Controls.Button();
             this.panel_ContenedorLateral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,15 +60,183 @@
             // 
             this.panel_ContenedorLateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_ContenedorLateral.BackgroundImage")));
             this.panel_ContenedorLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel_ContenedorLateral.Controls.Add(this.button3);
-            this.panel_ContenedorLateral.Controls.Add(this.button2);
-            this.panel_ContenedorLateral.Controls.Add(this.button1);
-            this.panel_ContenedorLateral.Controls.Add(this.button_Venta);
+            this.panel_ContenedorLateral.Controls.Add(this.airSeparator_Configuracion);
+            this.panel_ContenedorLateral.Controls.Add(this.parrotButton_Configuracion);
+            this.panel_ContenedorLateral.Controls.Add(this.airSeparator_Caja);
+            this.panel_ContenedorLateral.Controls.Add(this.parrotButton_Caja);
+            this.panel_ContenedorLateral.Controls.Add(this.airSeparator_Stock);
+            this.panel_ContenedorLateral.Controls.Add(this.parrotButton_Stock);
+            this.panel_ContenedorLateral.Controls.Add(this.airSeparator_Vender);
+            this.panel_ContenedorLateral.Controls.Add(this.parrotButton_Vender);
             this.panel_ContenedorLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_ContenedorLateral.Location = new System.Drawing.Point(0, 40);
             this.panel_ContenedorLateral.Name = "panel_ContenedorLateral";
             this.panel_ContenedorLateral.Size = new System.Drawing.Size(224, 599);
             this.panel_ContenedorLateral.TabIndex = 1;
+            // 
+            // airSeparator_Configuracion
+            // 
+            this.airSeparator_Configuracion.BackColor = System.Drawing.Color.Black;
+            this.airSeparator_Configuracion.Colors = new ReaLTaiizor.Util.BloomAir[0];
+            this.airSeparator_Configuracion.Customization = "";
+            this.airSeparator_Configuracion.Font = new System.Drawing.Font("Verdana", 8F);
+            this.airSeparator_Configuracion.Image = null;
+            this.airSeparator_Configuracion.Location = new System.Drawing.Point(3, 392);
+            this.airSeparator_Configuracion.Name = "airSeparator_Configuracion";
+            this.airSeparator_Configuracion.NoRounding = false;
+            this.airSeparator_Configuracion.Size = new System.Drawing.Size(215, 1);
+            this.airSeparator_Configuracion.TabIndex = 43;
+            this.airSeparator_Configuracion.Text = "airSeparator2";
+            this.airSeparator_Configuracion.Transparent = false;
+            // 
+            // parrotButton_Configuracion
+            // 
+            this.parrotButton_Configuracion.BackgroundColor = System.Drawing.Color.White;
+            this.parrotButton_Configuracion.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Configuracion.ButtonImage")));
+            this.parrotButton_Configuracion.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Configuracion.ButtonText = "Configuracion";
+            this.parrotButton_Configuracion.ClickBackColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Configuracion.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.parrotButton_Configuracion.CornerRadius = 5;
+            this.parrotButton_Configuracion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Configuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.parrotButton_Configuracion.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Configuracion.HoverBackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Configuracion.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.parrotButton_Configuracion.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Configuracion.Location = new System.Drawing.Point(3, 343);
+            this.parrotButton_Configuracion.Name = "parrotButton_Configuracion";
+            this.parrotButton_Configuracion.Size = new System.Drawing.Size(215, 50);
+            this.parrotButton_Configuracion.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Configuracion.TabIndex = 42;
+            this.parrotButton_Configuracion.TextColor = System.Drawing.Color.Black;
+            this.parrotButton_Configuracion.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Configuracion.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Configuracion.MouseLeave += new System.EventHandler(this.parrotButton_Configuracion_MouseLeave);
+            this.parrotButton_Configuracion.MouseHover += new System.EventHandler(this.parrotButton_Configuracion_MouseHover);
+            // 
+            // airSeparator_Caja
+            // 
+            this.airSeparator_Caja.BackColor = System.Drawing.Color.Black;
+            this.airSeparator_Caja.Colors = new ReaLTaiizor.Util.BloomAir[0];
+            this.airSeparator_Caja.Customization = "";
+            this.airSeparator_Caja.Font = new System.Drawing.Font("Verdana", 8F);
+            this.airSeparator_Caja.Image = null;
+            this.airSeparator_Caja.Location = new System.Drawing.Point(3, 317);
+            this.airSeparator_Caja.Name = "airSeparator_Caja";
+            this.airSeparator_Caja.NoRounding = false;
+            this.airSeparator_Caja.Size = new System.Drawing.Size(215, 1);
+            this.airSeparator_Caja.TabIndex = 41;
+            this.airSeparator_Caja.Text = "airSeparator2";
+            this.airSeparator_Caja.Transparent = false;
+            // 
+            // parrotButton_Caja
+            // 
+            this.parrotButton_Caja.BackgroundColor = System.Drawing.Color.White;
+            this.parrotButton_Caja.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Caja.ButtonImage")));
+            this.parrotButton_Caja.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Caja.ButtonText = "Caja";
+            this.parrotButton_Caja.ClickBackColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Caja.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.parrotButton_Caja.CornerRadius = 5;
+            this.parrotButton_Caja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Caja.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.parrotButton_Caja.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Caja.HoverBackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Caja.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.parrotButton_Caja.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Caja.Location = new System.Drawing.Point(3, 268);
+            this.parrotButton_Caja.Name = "parrotButton_Caja";
+            this.parrotButton_Caja.Size = new System.Drawing.Size(215, 50);
+            this.parrotButton_Caja.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Caja.TabIndex = 40;
+            this.parrotButton_Caja.TextColor = System.Drawing.Color.Black;
+            this.parrotButton_Caja.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Caja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Caja.MouseLeave += new System.EventHandler(this.parrotButton_Caja_MouseLeave);
+            this.parrotButton_Caja.MouseHover += new System.EventHandler(this.parrotButton_Caja_MouseHover);
+            // 
+            // airSeparator_Stock
+            // 
+            this.airSeparator_Stock.BackColor = System.Drawing.Color.Black;
+            this.airSeparator_Stock.Colors = new ReaLTaiizor.Util.BloomAir[0];
+            this.airSeparator_Stock.Customization = "";
+            this.airSeparator_Stock.Font = new System.Drawing.Font("Verdana", 8F);
+            this.airSeparator_Stock.Image = null;
+            this.airSeparator_Stock.Location = new System.Drawing.Point(3, 244);
+            this.airSeparator_Stock.Name = "airSeparator_Stock";
+            this.airSeparator_Stock.NoRounding = false;
+            this.airSeparator_Stock.Size = new System.Drawing.Size(215, 1);
+            this.airSeparator_Stock.TabIndex = 39;
+            this.airSeparator_Stock.Text = "airSeparator2";
+            this.airSeparator_Stock.Transparent = false;
+            // 
+            // parrotButton_Stock
+            // 
+            this.parrotButton_Stock.BackgroundColor = System.Drawing.Color.White;
+            this.parrotButton_Stock.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Stock.ButtonImage")));
+            this.parrotButton_Stock.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Stock.ButtonText = "Stock";
+            this.parrotButton_Stock.ClickBackColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Stock.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.parrotButton_Stock.CornerRadius = 5;
+            this.parrotButton_Stock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.parrotButton_Stock.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Stock.HoverBackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Stock.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.parrotButton_Stock.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Stock.Location = new System.Drawing.Point(3, 195);
+            this.parrotButton_Stock.Name = "parrotButton_Stock";
+            this.parrotButton_Stock.Size = new System.Drawing.Size(215, 50);
+            this.parrotButton_Stock.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Stock.TabIndex = 38;
+            this.parrotButton_Stock.TextColor = System.Drawing.Color.Black;
+            this.parrotButton_Stock.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Stock.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Stock.MouseLeave += new System.EventHandler(this.parrotButton_Stock_MouseLeave);
+            this.parrotButton_Stock.MouseHover += new System.EventHandler(this.parrotButton_Stock_MouseHover);
+            // 
+            // airSeparator_Vender
+            // 
+            this.airSeparator_Vender.BackColor = System.Drawing.Color.Black;
+            this.airSeparator_Vender.Colors = new ReaLTaiizor.Util.BloomAir[0];
+            this.airSeparator_Vender.Customization = "";
+            this.airSeparator_Vender.Font = new System.Drawing.Font("Verdana", 8F);
+            this.airSeparator_Vender.Image = null;
+            this.airSeparator_Vender.Location = new System.Drawing.Point(3, 176);
+            this.airSeparator_Vender.Name = "airSeparator_Vender";
+            this.airSeparator_Vender.NoRounding = false;
+            this.airSeparator_Vender.Size = new System.Drawing.Size(215, 1);
+            this.airSeparator_Vender.TabIndex = 37;
+            this.airSeparator_Vender.Text = "airSeparator2";
+            this.airSeparator_Vender.Transparent = false;
+            // 
+            // parrotButton_Vender
+            // 
+            this.parrotButton_Vender.BackgroundColor = System.Drawing.Color.White;
+            this.parrotButton_Vender.ButtonImage = ((System.Drawing.Image)(resources.GetObject("parrotButton_Vender.ButtonImage")));
+            this.parrotButton_Vender.ButtonStyle = ReaLTaiizor.Controls.ParrotButton.Style.Material;
+            this.parrotButton_Vender.ButtonText = "Vender";
+            this.parrotButton_Vender.ClickBackColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Vender.ClickTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.parrotButton_Vender.CornerRadius = 5;
+            this.parrotButton_Vender.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.parrotButton_Vender.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.parrotButton_Vender.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Vender.HoverBackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.parrotButton_Vender.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.parrotButton_Vender.ImagePosition = ReaLTaiizor.Controls.ParrotButton.ImgPosition.Left;
+            this.parrotButton_Vender.Location = new System.Drawing.Point(3, 127);
+            this.parrotButton_Vender.Name = "parrotButton_Vender";
+            this.parrotButton_Vender.Size = new System.Drawing.Size(215, 50);
+            this.parrotButton_Vender.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotButton_Vender.TabIndex = 36;
+            this.parrotButton_Vender.TextColor = System.Drawing.Color.Black;
+            this.parrotButton_Vender.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotButton_Vender.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Vender.MouseLeave += new System.EventHandler(this.parrotButton_Vender_MouseLeave);
+            this.parrotButton_Vender.MouseHover += new System.EventHandler(this.parrotButton_Vender_MouseHover);
             // 
             // parrotGradientPanel1
             // 
@@ -87,92 +259,12 @@
             // 
             // panel_Contenedor
             // 
+            this.panel_Contenedor.BackColor = System.Drawing.Color.White;
             this.panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Contenedor.Location = new System.Drawing.Point(229, 40);
             this.panel_Contenedor.Name = "panel_Contenedor";
             this.panel_Contenedor.Size = new System.Drawing.Size(777, 599);
             this.panel_Contenedor.TabIndex = 3;
-            // 
-            // button_Venta
-            // 
-            this.button_Venta.BackColor = System.Drawing.Color.Transparent;
-            this.button_Venta.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button_Venta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Venta.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button_Venta.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button_Venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button_Venta.Image = null;
-            this.button_Venta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Venta.InactiveColor = System.Drawing.Color.Transparent;
-            this.button_Venta.Location = new System.Drawing.Point(0, 125);
-            this.button_Venta.Name = "button_Venta";
-            this.button_Venta.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button_Venta.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button_Venta.Size = new System.Drawing.Size(226, 40);
-            this.button_Venta.TabIndex = 2;
-            this.button_Venta.Text = "Ventas";
-            this.button_Venta.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.button_Venta.Click += new System.EventHandler(this.button_Venta_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Image = null;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button1.Location = new System.Drawing.Point(0, 171);
-            this.button1.Name = "button1";
-            this.button1.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.Size = new System.Drawing.Size(226, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ventas";
-            this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button2.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Image = null;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button2.Location = new System.Drawing.Point(0, 217);
-            this.button2.Name = "button2";
-            this.button2.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button2.Size = new System.Drawing.Size(226, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Ventas";
-            this.button2.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button3.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Image = null;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button3.Location = new System.Drawing.Point(0, 263);
-            this.button3.Name = "button3";
-            this.button3.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button3.Size = new System.Drawing.Size(226, 40);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Ventas";
-            this.button3.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // FormularioPrincipal
             // 
@@ -199,11 +291,15 @@
         private ReaLTaiizor.Forms.HopeForm ThePerfum;
         private System.Windows.Forms.Panel panel_ContenedorLateral;
         private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
+        private ReaLTaiizor.Controls.AirSeparator airSeparator_Configuracion;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Configuracion;
+        private ReaLTaiizor.Controls.AirSeparator airSeparator_Caja;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Caja;
+        private ReaLTaiizor.Controls.AirSeparator airSeparator_Stock;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Stock;
+        private ReaLTaiizor.Controls.AirSeparator airSeparator_Vender;
+        private ReaLTaiizor.Controls.ParrotButton parrotButton_Vender;
         private System.Windows.Forms.Panel panel_Contenedor;
-        private ReaLTaiizor.Controls.Button button_Venta;
-        private ReaLTaiizor.Controls.Button button3;
-        private ReaLTaiizor.Controls.Button button2;
-        private ReaLTaiizor.Controls.Button button1;
     }
 }
 
