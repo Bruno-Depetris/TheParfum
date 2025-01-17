@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheParfum.Formularios;
 
 namespace TheParfum {
     public partial class FormularioPrincipal : Form {
         public FormularioPrincipal() {
             InitializeComponent();
+            AbrirFormNuevo(new DashBoard());
         }
 
         private Form FormActivo = null;
