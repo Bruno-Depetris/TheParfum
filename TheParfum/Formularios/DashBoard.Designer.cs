@@ -43,14 +43,30 @@
             this.comboBoxEdit_Seleccionar = new ReaLTaiizor.Controls.ComboBoxEdit();
             this.moonLabel1 = new ReaLTaiizor.Controls.MoonLabel();
             this.materialCard_DineroStock_VentasDiarias = new ReaLTaiizor.Controls.MaterialCard();
-            this.parrotLineGraph1 = new ReaLTaiizor.Controls.ParrotLineGraph();
+            this.parrotLineGraph_topVentas = new ReaLTaiizor.Controls.ParrotLineGraph();
+            this.poisonLabel_EstadoConexion = new ReaLTaiizor.Controls.PoisonLabel();
+            this.poisonLabel_Conexion = new ReaLTaiizor.Controls.PoisonLabel();
+            this.poisonLabel_EstadoCaja = new ReaLTaiizor.Controls.PoisonLabel();
+            this.bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
+            this.materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.airSeparator2 = new ReaLTaiizor.Controls.AirSeparator();
+            this.dungeonLabel1 = new ReaLTaiizor.Controls.DungeonLabel();
+            this.dungeonLabel_capitalStock = new ReaLTaiizor.Controls.DungeonLabel();
+            this.materialLabel_prodMasVendido = new ReaLTaiizor.Controls.MaterialLabel();
+            this.materialLabel2 = new ReaLTaiizor.Controls.MaterialLabel();
             this.materialCard_EstadoCaja_bd_wifi.SuspendLayout();
             this.materialCard_Cotizaciones.SuspendLayout();
+            this.materialCard_DineroStock_VentasDiarias.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialCard_EstadoCaja_bd_wifi
             // 
+            this.materialCard_EstadoCaja_bd_wifi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard_EstadoCaja_bd_wifi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel_EstadoCaja);
+            this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel_Conexion);
+            this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel_EstadoConexion);
             this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel3);
             this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel2);
             this.materialCard_EstadoCaja_bd_wifi.Controls.Add(this.poisonLabel1);
@@ -198,7 +214,7 @@
             this.poisonLabel8.Name = "poisonLabel8";
             this.poisonLabel8.Size = new System.Drawing.Size(165, 25);
             this.poisonLabel8.TabIndex = 7;
-            this.poisonLabel8.Text = "Fecha Actualizacion:";
+            this.poisonLabel8.Text = "Fecha Actualización:";
             // 
             // poisonLabel7
             // 
@@ -275,7 +291,16 @@
             // 
             // materialCard_DineroStock_VentasDiarias
             // 
+            this.materialCard_DineroStock_VentasDiarias.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialCard_DineroStock_VentasDiarias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.materialLabel2);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.materialLabel_prodMasVendido);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.dungeonLabel_capitalStock);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.dungeonLabel1);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.airSeparator2);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.materialLabel1);
+            this.materialCard_DineroStock_VentasDiarias.Controls.Add(this.bigLabel1);
             this.materialCard_DineroStock_VentasDiarias.Depth = 0;
             this.materialCard_DineroStock_VentasDiarias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard_DineroStock_VentasDiarias.Location = new System.Drawing.Point(295, 78);
@@ -286,32 +311,152 @@
             this.materialCard_DineroStock_VentasDiarias.Size = new System.Drawing.Size(459, 309);
             this.materialCard_DineroStock_VentasDiarias.TabIndex = 2;
             // 
-            // parrotLineGraph1
+            // parrotLineGraph_topVentas
             // 
-            this.parrotLineGraph1.BackGroundColor = System.Drawing.Color.White;
-            this.parrotLineGraph1.BelowLineColor = System.Drawing.Color.Red;
-            this.parrotLineGraph1.BorderColor = System.Drawing.Color.Black;
-            this.parrotLineGraph1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.parrotLineGraph1.GraphStyle = ReaLTaiizor.Controls.ParrotLineGraph.Style.Curved;
-            this.parrotLineGraph1.GraphTitle = "Parrot Line Graph";
-            this.parrotLineGraph1.GraphTitleColor = System.Drawing.Color.Gray;
-            this.parrotLineGraph1.Items = ((System.Collections.Generic.List<int>)(resources.GetObject("parrotLineGraph1.Items")));
-            this.parrotLineGraph1.LineColor = System.Drawing.Color.Red;
-            this.parrotLineGraph1.Location = new System.Drawing.Point(0, 442);
-            this.parrotLineGraph1.Name = "parrotLineGraph1";
-            this.parrotLineGraph1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.parrotLineGraph1.PointSize = 7;
-            this.parrotLineGraph1.ShowBorder = false;
-            this.parrotLineGraph1.ShowPoints = true;
-            this.parrotLineGraph1.ShowTitle = false;
-            this.parrotLineGraph1.ShowVerticalLines = false;
-            this.parrotLineGraph1.Size = new System.Drawing.Size(777, 157);
-            this.parrotLineGraph1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.parrotLineGraph1.TabIndex = 3;
-            this.parrotLineGraph1.Text = "parrotLineGraph1";
-            this.parrotLineGraph1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotLineGraph1.TitleAlignment = System.Drawing.StringAlignment.Near;
-            this.parrotLineGraph1.VerticalLineColor = System.Drawing.Color.DimGray;
+            this.parrotLineGraph_topVentas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.parrotLineGraph_topVentas.BackGroundColor = System.Drawing.Color.White;
+            this.parrotLineGraph_topVentas.BelowLineColor = System.Drawing.Color.Red;
+            this.parrotLineGraph_topVentas.BorderColor = System.Drawing.Color.Black;
+            this.parrotLineGraph_topVentas.GraphStyle = ReaLTaiizor.Controls.ParrotLineGraph.Style.Curved;
+            this.parrotLineGraph_topVentas.GraphTitle = "Parrot Line Graph";
+            this.parrotLineGraph_topVentas.GraphTitleColor = System.Drawing.Color.Gray;
+            this.parrotLineGraph_topVentas.Items = ((System.Collections.Generic.List<int>)(resources.GetObject("parrotLineGraph_topVentas.Items")));
+            this.parrotLineGraph_topVentas.LineColor = System.Drawing.Color.Red;
+            this.parrotLineGraph_topVentas.Location = new System.Drawing.Point(0, 442);
+            this.parrotLineGraph_topVentas.Name = "parrotLineGraph_topVentas";
+            this.parrotLineGraph_topVentas.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.parrotLineGraph_topVentas.PointSize = 7;
+            this.parrotLineGraph_topVentas.ShowBorder = false;
+            this.parrotLineGraph_topVentas.ShowPoints = true;
+            this.parrotLineGraph_topVentas.ShowTitle = false;
+            this.parrotLineGraph_topVentas.ShowVerticalLines = false;
+            this.parrotLineGraph_topVentas.Size = new System.Drawing.Size(777, 157);
+            this.parrotLineGraph_topVentas.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.parrotLineGraph_topVentas.TabIndex = 3;
+            this.parrotLineGraph_topVentas.Text = "parrotLineGraph1";
+            this.parrotLineGraph_topVentas.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            this.parrotLineGraph_topVentas.TitleAlignment = System.Drawing.StringAlignment.Near;
+            this.parrotLineGraph_topVentas.VerticalLineColor = System.Drawing.Color.DimGray;
+            // 
+            // poisonLabel_EstadoConexion
+            // 
+            this.poisonLabel_EstadoConexion.AutoSize = true;
+            this.poisonLabel_EstadoConexion.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Tall;
+            this.poisonLabel_EstadoConexion.Location = new System.Drawing.Point(186, 8);
+            this.poisonLabel_EstadoConexion.Name = "poisonLabel_EstadoConexion";
+            this.poisonLabel_EstadoConexion.Size = new System.Drawing.Size(176, 25);
+            this.poisonLabel_EstadoConexion.TabIndex = 3;
+            this.poisonLabel_EstadoConexion.Text = "Conexion Base Datos:";
+            // 
+            // poisonLabel_Conexion
+            // 
+            this.poisonLabel_Conexion.AutoSize = true;
+            this.poisonLabel_Conexion.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Tall;
+            this.poisonLabel_Conexion.Location = new System.Drawing.Point(388, 8);
+            this.poisonLabel_Conexion.Name = "poisonLabel_Conexion";
+            this.poisonLabel_Conexion.Size = new System.Drawing.Size(176, 25);
+            this.poisonLabel_Conexion.TabIndex = 4;
+            this.poisonLabel_Conexion.Text = "Conexion Base Datos:";
+            // 
+            // poisonLabel_EstadoCaja
+            // 
+            this.poisonLabel_EstadoCaja.AutoSize = true;
+            this.poisonLabel_EstadoCaja.FontSize = ReaLTaiizor.Extension.Poison.PoisonLabelSize.Tall;
+            this.poisonLabel_EstadoCaja.Location = new System.Drawing.Point(651, 8);
+            this.poisonLabel_EstadoCaja.Name = "poisonLabel_EstadoCaja";
+            this.poisonLabel_EstadoCaja.Size = new System.Drawing.Size(49, 25);
+            this.poisonLabel_EstadoCaja.TabIndex = 5;
+            this.poisonLabel_EstadoCaja.Text = "Caja:";
+            // 
+            // bigLabel1
+            // 
+            this.bigLabel1.AutoSize = true;
+            this.bigLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bigLabel1.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.bigLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.bigLabel1.Location = new System.Drawing.Point(5, 11);
+            this.bigLabel1.Name = "bigLabel1";
+            this.bigLabel1.Size = new System.Drawing.Size(181, 46);
+            this.bigLabel1.TabIndex = 0;
+            this.bigLabel1.Text = "BALANCES";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(17, 77);
+            this.materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(118, 19);
+            this.materialLabel1.TabIndex = 1;
+            this.materialLabel1.Text = "Capital en stock:";
+            // 
+            // airSeparator2
+            // 
+            this.airSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.airSeparator2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.airSeparator2.Colors = new ReaLTaiizor.Util.BloomAir[0];
+            this.airSeparator2.Customization = "";
+            this.airSeparator2.Font = new System.Drawing.Font("Verdana", 8F);
+            this.airSeparator2.Image = null;
+            this.airSeparator2.Location = new System.Drawing.Point(20, 99);
+            this.airSeparator2.Name = "airSeparator2";
+            this.airSeparator2.NoRounding = false;
+            this.airSeparator2.Size = new System.Drawing.Size(422, 1);
+            this.airSeparator2.TabIndex = 14;
+            this.airSeparator2.Text = "airSeparator2";
+            this.airSeparator2.Transparent = false;
+            // 
+            // dungeonLabel1
+            // 
+            this.dungeonLabel1.AutoSize = true;
+            this.dungeonLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel1.Location = new System.Drawing.Point(141, 76);
+            this.dungeonLabel1.Name = "dungeonLabel1";
+            this.dungeonLabel1.Size = new System.Drawing.Size(17, 20);
+            this.dungeonLabel1.TabIndex = 15;
+            this.dungeonLabel1.Text = "$";
+            // 
+            // dungeonLabel_capitalStock
+            // 
+            this.dungeonLabel_capitalStock.AutoSize = true;
+            this.dungeonLabel_capitalStock.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonLabel_capitalStock.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dungeonLabel_capitalStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonLabel_capitalStock.Location = new System.Drawing.Point(164, 76);
+            this.dungeonLabel_capitalStock.Name = "dungeonLabel_capitalStock";
+            this.dungeonLabel_capitalStock.Size = new System.Drawing.Size(17, 20);
+            this.dungeonLabel_capitalStock.TabIndex = 16;
+            this.dungeonLabel_capitalStock.Text = "$";
+            // 
+            // materialLabel_prodMasVendido
+            // 
+            this.materialLabel_prodMasVendido.AutoSize = true;
+            this.materialLabel_prodMasVendido.Depth = 0;
+            this.materialLabel_prodMasVendido.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel_prodMasVendido.Location = new System.Drawing.Point(193, 133);
+            this.materialLabel_prodMasVendido.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel_prodMasVendido.Name = "materialLabel_prodMasVendido";
+            this.materialLabel_prodMasVendido.Size = new System.Drawing.Size(162, 19);
+            this.materialLabel_prodMasVendido.TabIndex = 17;
+            this.materialLabel_prodMasVendido.Text = "Producto mas Vendido";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(17, 133);
+            this.materialLabel2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(170, 19);
+            this.materialLabel2.TabIndex = 18;
+            this.materialLabel2.Text = "Producto mas Vendido :";
             // 
             // DashBoard
             // 
@@ -319,7 +464,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(777, 599);
-            this.Controls.Add(this.parrotLineGraph1);
+            this.Controls.Add(this.parrotLineGraph_topVentas);
             this.Controls.Add(this.materialCard_DineroStock_VentasDiarias);
             this.Controls.Add(this.materialCard_Cotizaciones);
             this.Controls.Add(this.materialCard_EstadoCaja_bd_wifi);
@@ -331,6 +476,8 @@
             this.materialCard_EstadoCaja_bd_wifi.PerformLayout();
             this.materialCard_Cotizaciones.ResumeLayout(false);
             this.materialCard_Cotizaciones.PerformLayout();
+            this.materialCard_DineroStock_VentasDiarias.ResumeLayout(false);
+            this.materialCard_DineroStock_VentasDiarias.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -340,7 +487,7 @@
         private ReaLTaiizor.Controls.MaterialCard materialCard_EstadoCaja_bd_wifi;
         private ReaLTaiizor.Controls.MaterialCard materialCard_Cotizaciones;
         private ReaLTaiizor.Controls.MaterialCard materialCard_DineroStock_VentasDiarias;
-        private ReaLTaiizor.Controls.ParrotLineGraph parrotLineGraph1;
+        private ReaLTaiizor.Controls.ParrotLineGraph parrotLineGraph_topVentas;
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel3;
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel2;
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel1;
@@ -357,5 +504,15 @@
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel_Compra;
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel_Casa;
         private ReaLTaiizor.Controls.PoisonLabel poisonLabel_Moneda;
+        private ReaLTaiizor.Controls.PoisonLabel poisonLabel_EstadoCaja;
+        private ReaLTaiizor.Controls.PoisonLabel poisonLabel_Conexion;
+        private ReaLTaiizor.Controls.PoisonLabel poisonLabel_EstadoConexion;
+        private ReaLTaiizor.Controls.MaterialLabel materialLabel1;
+        private ReaLTaiizor.Controls.BigLabel bigLabel1;
+        private ReaLTaiizor.Controls.DungeonLabel dungeonLabel1;
+        private ReaLTaiizor.Controls.AirSeparator airSeparator2;
+        private ReaLTaiizor.Controls.MaterialLabel materialLabel2;
+        private ReaLTaiizor.Controls.MaterialLabel materialLabel_prodMasVendido;
+        private ReaLTaiizor.Controls.DungeonLabel dungeonLabel_capitalStock;
     }
 }

@@ -9,17 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TheParfum.Formularios {
-    public partial class Vender : Form {
-        public Vender() {
+    public partial class Stock : Form {
+        public Stock() {
             InitializeComponent();
-        }
-
-        private void materialCard_contenedorForm_Paint(object sender, PaintEventArgs e) {
-
-        }
-
-        private void materialTextBoxEdit_Celular_Click(object sender, EventArgs e) {
-
         }
     }
 }

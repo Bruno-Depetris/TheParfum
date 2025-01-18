@@ -68,5 +68,21 @@ namespace TheParfum {
             airSeparator_Configuracion.BackColor = Color.Black;
         }
         #endregion
+
+        private void parrotButton_Vender_Click(object sender, EventArgs e) {
+            AbrirFormNuevo(new Vender());
+        }
+
+        private void parrotButton_Stock_Click(object sender, EventArgs e) {
+            AbrirFormNuevo(new Stock());
+        }
+
+        private void parrotButton_Caja_Click(object sender, EventArgs e) {
+   
+        }
+
+        private void parrotButton_Configuracion_Click(object sender, EventArgs e) {
+
+        }
     }
 }

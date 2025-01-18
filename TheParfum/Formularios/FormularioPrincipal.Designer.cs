@@ -34,16 +34,16 @@
             this.parrotButton_Stock = new ReaLTaiizor.Controls.ParrotButton();
             this.airSeparator_Vender = new ReaLTaiizor.Controls.AirSeparator();
             this.parrotButton_Vender = new ReaLTaiizor.Controls.ParrotButton();
-            this.parrotGradientPanel1 = new ReaLTaiizor.Controls.ParrotGradientPanel();
+            this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.panel_Contenedor = new System.Windows.Forms.Panel();
             this.panel_ContenedorLateral.SuspendLayout();
             this.SuspendLayout();
             // 
             // ThePerfum
             // 
-            this.ThePerfum.ControlBoxColorH = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(231)))), ((int)(((byte)(237)))));
+            this.ThePerfum.ControlBoxColorH = System.Drawing.Color.Black;
             this.ThePerfum.ControlBoxColorHC = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.ThePerfum.ControlBoxColorN = System.Drawing.Color.White;
+            this.ThePerfum.ControlBoxColorN = System.Drawing.Color.Black;
             this.ThePerfum.Cursor = System.Windows.Forms.Cursors.Default;
             this.ThePerfum.Dock = System.Windows.Forms.DockStyle.Top;
             this.ThePerfum.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -54,11 +54,10 @@
             this.ThePerfum.Size = new System.Drawing.Size(1006, 40);
             this.ThePerfum.TabIndex = 0;
             this.ThePerfum.Text = "ThePerfum";
-            this.ThePerfum.ThemeColor = System.Drawing.Color.Black;
+            this.ThePerfum.ThemeColor = System.Drawing.Color.White;
             // 
             // panel_ContenedorLateral
             // 
-            this.panel_ContenedorLateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_ContenedorLateral.BackgroundImage")));
             this.panel_ContenedorLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel_ContenedorLateral.Controls.Add(this.airSeparator_Configuracion);
             this.panel_ContenedorLateral.Controls.Add(this.parrotButton_Configuracion);
@@ -112,6 +111,7 @@
             this.parrotButton_Configuracion.TextColor = System.Drawing.Color.Black;
             this.parrotButton_Configuracion.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Configuracion.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Configuracion.Click += new System.EventHandler(this.parrotButton_Configuracion_Click);
             this.parrotButton_Configuracion.MouseLeave += new System.EventHandler(this.parrotButton_Configuracion_MouseLeave);
             this.parrotButton_Configuracion.MouseHover += new System.EventHandler(this.parrotButton_Configuracion_MouseHover);
             // 
@@ -153,6 +153,7 @@
             this.parrotButton_Caja.TextColor = System.Drawing.Color.Black;
             this.parrotButton_Caja.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Caja.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Caja.Click += new System.EventHandler(this.parrotButton_Caja_Click);
             this.parrotButton_Caja.MouseLeave += new System.EventHandler(this.parrotButton_Caja_MouseLeave);
             this.parrotButton_Caja.MouseHover += new System.EventHandler(this.parrotButton_Caja_MouseHover);
             // 
@@ -194,6 +195,7 @@
             this.parrotButton_Stock.TextColor = System.Drawing.Color.Black;
             this.parrotButton_Stock.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Stock.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Stock.Click += new System.EventHandler(this.parrotButton_Stock_Click);
             this.parrotButton_Stock.MouseLeave += new System.EventHandler(this.parrotButton_Stock_MouseLeave);
             this.parrotButton_Stock.MouseHover += new System.EventHandler(this.parrotButton_Stock_MouseHover);
             // 
@@ -235,35 +237,25 @@
             this.parrotButton_Vender.TextColor = System.Drawing.Color.Black;
             this.parrotButton_Vender.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.parrotButton_Vender.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.parrotButton_Vender.Click += new System.EventHandler(this.parrotButton_Vender_Click);
             this.parrotButton_Vender.MouseLeave += new System.EventHandler(this.parrotButton_Vender_MouseLeave);
             this.parrotButton_Vender.MouseHover += new System.EventHandler(this.parrotButton_Vender_MouseHover);
             // 
-            // parrotGradientPanel1
+            // entityCommand1
             // 
-            this.parrotGradientPanel1.BottomLeft = System.Drawing.Color.Black;
-            this.parrotGradientPanel1.BottomRight = System.Drawing.Color.Fuchsia;
-            this.parrotGradientPanel1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            this.parrotGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.parrotGradientPanel1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            this.parrotGradientPanel1.Location = new System.Drawing.Point(224, 40);
-            this.parrotGradientPanel1.Name = "parrotGradientPanel1";
-            this.parrotGradientPanel1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.parrotGradientPanel1.PrimerColor = System.Drawing.Color.White;
-            this.parrotGradientPanel1.Size = new System.Drawing.Size(5, 599);
-            this.parrotGradientPanel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.parrotGradientPanel1.Style = ReaLTaiizor.Controls.ParrotGradientPanel.GradientStyle.Vertical;
-            this.parrotGradientPanel1.TabIndex = 2;
-            this.parrotGradientPanel1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            this.parrotGradientPanel1.TopLeft = System.Drawing.Color.Gray;
-            this.parrotGradientPanel1.TopRight = System.Drawing.Color.White;
+            this.entityCommand1.CommandTimeout = 0;
+            this.entityCommand1.CommandTree = null;
+            this.entityCommand1.Connection = null;
+            this.entityCommand1.EnablePlanCaching = true;
+            this.entityCommand1.Transaction = null;
             // 
             // panel_Contenedor
             // 
             this.panel_Contenedor.BackColor = System.Drawing.Color.White;
             this.panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Contenedor.Location = new System.Drawing.Point(229, 40);
+            this.panel_Contenedor.Location = new System.Drawing.Point(224, 40);
             this.panel_Contenedor.Name = "panel_Contenedor";
-            this.panel_Contenedor.Size = new System.Drawing.Size(777, 599);
+            this.panel_Contenedor.Size = new System.Drawing.Size(782, 599);
             this.panel_Contenedor.TabIndex = 3;
             // 
             // FormularioPrincipal
@@ -272,7 +264,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 639);
             this.Controls.Add(this.panel_Contenedor);
-            this.Controls.Add(this.parrotGradientPanel1);
             this.Controls.Add(this.panel_ContenedorLateral);
             this.Controls.Add(this.ThePerfum);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -290,7 +281,6 @@
 
         private ReaLTaiizor.Forms.HopeForm ThePerfum;
         private System.Windows.Forms.Panel panel_ContenedorLateral;
-        private ReaLTaiizor.Controls.ParrotGradientPanel parrotGradientPanel1;
         private ReaLTaiizor.Controls.AirSeparator airSeparator_Configuracion;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Configuracion;
         private ReaLTaiizor.Controls.AirSeparator airSeparator_Caja;
@@ -299,6 +289,7 @@
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Stock;
         private ReaLTaiizor.Controls.AirSeparator airSeparator_Vender;
         private ReaLTaiizor.Controls.ParrotButton parrotButton_Vender;
+        private System.Data.Entity.Core.EntityClient.EntityCommand entityCommand1;
         private System.Windows.Forms.Panel panel_Contenedor;
     }
 }
